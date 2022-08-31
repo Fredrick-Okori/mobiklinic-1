@@ -21,6 +21,11 @@ server.get('/about', (req, res) => {
 });
 
 server.get('/contact', (req, res) => { res.sendFile('/contact.html', { root: __dirname }); });
+server.get('/partner', (req, res) => {
+    res.sendFile('/partners.html', {
+        root: __dirname
+    });
+});
 
 server.listen(8080, () => {
     console.log('Express server started at port 8080');
