@@ -20,9 +20,12 @@ server.get('/about', (req, res) => {
     });
 });
 
-server.get('/contact', (req, res) => { res.sendFile('/contact.html', { root: __dirname }); });
-server.get('/partner', (req, res) => {
-    res.sendFile('/partners.html', {
+server.get('/contact', (req, res) => {
+    res.sendFile('/contact.html', { root: __dirname });
+});
+
+server.get('/privary', (req, res) => {
+    res.sendFile('/privacy.html', {
         root: __dirname
     });
 });
