@@ -1122,6 +1122,10 @@ section {
   color: #3c4133;
 }
 
+.card-text {
+  /* text-align: justify; */
+}
+
 .features .card-text {
   color: #5e5e5e;
 }
@@ -1421,6 +1425,19 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #3fbbc0;
 }
+
+.getstarted--products {
+  background: #DE0605;
+  border: 0;
+  border-radius: 4px 4px 4px 4px;
+  width: 35%;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
