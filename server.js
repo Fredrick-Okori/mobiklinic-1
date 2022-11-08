@@ -56,6 +56,7 @@ server.post('/contact', async (req, res, next) => {
     });
     const mailOption = {
         //build email option
+        from: [contactAddress, req.body.email],
         to: [req.body.email],
         from: `${req.body.name}`,
         subject: `${req.body.subject}`,
