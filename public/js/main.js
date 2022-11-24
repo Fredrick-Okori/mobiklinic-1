@@ -320,7 +320,6 @@ const form = document.getElementById('form');
 const submit = document.getElementById('submit')
 submit.addEventListener('click', function handleClick(event) {
   event.preventDefault();
-  console.log('I have been clicked');
   alert.style.display = 'block';
   form.style.display = 'none';
 
