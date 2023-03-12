@@ -319,8 +319,11 @@ const form = document.getElementById('form');
 
 const submit = document.getElementById('submit')
 submit.addEventListener('click', function handleClick(event) {
-  event.preventDefault();
+  if (!form.reportValidity())
+    return;
+
   alert.style.display = 'block';
   form.style.display = 'none';
 
+  setTimeout(form.submit(), 1000);
 })

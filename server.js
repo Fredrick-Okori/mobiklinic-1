@@ -56,10 +56,9 @@ server.post('/contact', async (req, res, next) => {
     });
     const mailOption = {
         //build email option
-        from: [contactAddress, req.body.email],
-        to: [req.body.email],
-        from: `${req.body.name}`,
-        subject: `${req.body.subject}`,
+        from: [req.body.email],
+        to: ['admin@mobiklinic.com'],
+        subject: `Contact Form: ${req.body.subject} from: ${req.body.name} email: ${req.body.email}`,
         text: req.body.message
     }
 
@@ -69,8 +68,9 @@ server.post('/contact', async (req, res, next) => {
             console.log(error);
             res.json({ msg: 'fail' });
         } else {
-            console.log('good')
-            res.sendFile('/contact', { root: __dirname });
+            console.log('good');
+            console.log(res);
+            // res.sendfile('/contact.html', { root: __dirname });
         }
     })
 });
