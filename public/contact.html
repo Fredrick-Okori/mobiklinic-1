@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - MobiKlinic Uganda</title>
+  <title>Contact | MobiKlinic Uganda</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/favicon.ico" rel="icon">
   <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -29,50 +29,44 @@
   <!-- Template Main CSS File -->
   <link href="/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Serenity - v4.8.0
-  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
   
       <div class="logo">
         <h1 class="text-light"><a href="index.html"><img src="/img/mobiKlinic.png"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
       </div>
   
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.html">Who we are</a></li>
+          <li><a href="index.html">Who we are</a></li>
           <li class="dropdown"><a href="#"><span>What we do</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html">About</a> </li>
+              <li><a href='/img/Mobiklinic 2022 Annual Report.pdf.pdf' target="_blank">2022 Report</a></li>
               <li><a href="team.html">Team</a></li>
-              <li class="dropdown"><a href="#"><span>Board Members</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="advisory.html">Advisory</a></li>
-                  <li><a href="governors.html">Non-Executives</a></li>
-                </ul>
-              </li>
+              <li><a href="advisory.html">Advisory</a></li>
+              <li><a href="governors.html">Non-Executives</a></li>
+  
             </ul>
           </li>
           <li><a href="contact.html">Get in touch</a></li>
           <li><a href="faq.html">FAQs</a> </li>
   
-          <li><a class="getstarted" href="about.html">Give to Mobiklinic</a></li>
+          <li><a class="getstarted" href="about.html">MobiLearn</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
   
     </div>
   </header><!-- End Header -->
+
 
 
   <main id="main">
@@ -105,10 +99,11 @@
       <div class="container">
 
         <div>
-          
+
           <iframe style="border:0; width: 100%; height: 300px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-            frameborder="0" allowfullscreen></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.983026460834!2d32.57109661615994!3d0.3455584533795299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbafd57bb1571%3A0x446940e3f0a48c6f!2sMobiklinic!5e0!3m2!1sen!2sug!4v1664269802375!5m2!1sen!2sug"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="row mt-5">
@@ -124,7 +119,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@mobiklinic.com</p>
+                <p>admin@mobiklinic.com</p>
               </div>
 
               <div class="phone">
@@ -139,7 +134,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="/contact" method="POST" role="form" class="php-email-form" id="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -152,16 +147,19 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
 
+              <div class="text-center" id="submit"><button type="submit">Send Message</button>
+              </div>
+            </form>
+            <div class="my-3">
+              <div class="alert" style="display:none">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Thank you for contacting us, we will get back to you soon!
+              </div>
+            </div>
           </div>
 
         </div>
@@ -171,6 +169,7 @@
 
   </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -190,11 +189,12 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
               <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="privacy.html" target="_blank">Privacy
+                  policy</a></li>
             </ul>
           </div>
 
@@ -205,26 +205,27 @@
               Mawanda Road<br>
               Kampala, Uganda <br>
               <strong>Phone:</strong> (+256) 700 218 686<br>
-              <strong>Email:</strong> info@mobiklinic.com<br>
+              <strong>Email:</strong> admin@mobiklinic.com<br>
             </p>
 
             <div class="social-links">
-              <a href="htt://twiter.com" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="htt://facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="htt://instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="htt://linkedin.com" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://mobile.twitter.com/klinicuganda" class="twitter" target="_blank" rel=”noopener”><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/mobiklinicUganda/" class="facebook" target="_blank" rel=”noopener”><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/mobiklinic/" class="instagram" target="_blank" rel=”noopener”><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/mobiklinic/about/" class="linkedin" target="_blank" rel=”noopener”><i
+                  class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
-              legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+    <div class="col-lg-3 col-md-6 footer-newsletter">
+      <h4>Our reports</h4>
+      <p>
+        Find more in our yearly report.
+        <a href="./Events.html" target="_blank">Find here</a>
+      </p>
+    
+    </div>
 
         </div>
       </div>
@@ -239,7 +240,6 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/serenity-bootstrap-corporate-template/ -->
-        Designed by <a href="https://erinet.com/">erinet.com | 0784704143 </a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -255,7 +255,8 @@
   <script src="/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/swiper/swiper-bundle.min.js"></script>
   <script src="/waypoints/noframework.waypoints.js"></script>
-  <script src="/php-email-form/validate.js"></script>
+
+
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>

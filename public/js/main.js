@@ -166,7 +166,7 @@
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
-    
+
   });
   /**
    * Clients Slider
@@ -309,3 +309,21 @@ new Swiper('.gallery-slider', {
 const galleryLightbox = GLightbox({
   selector: '.gallery-lightbox'
 });
+
+let alert = document.querySelector('.alert');
+const username = document.querySelector('#name');
+const email = document.querySelector('#email');
+const subject = document.querySelector('#subject');
+const message = document.querySelector('#message');
+const form = document.getElementById('form');
+
+const submit = document.getElementById('submit')
+submit.addEventListener('click', function handleClick(event) {
+  if (!form.reportValidity())
+    return;
+
+  alert.style.display = 'block';
+  form.style.display = 'none';
+
+  setTimeout(form.submit(), 1000);
+})
