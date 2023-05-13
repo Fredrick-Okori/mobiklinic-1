@@ -29,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="/css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -38,7 +39,7 @@
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Who we are</a></li>
+          <li ><a class="active" href="index.html">Who we are</a></li>
           <li class="dropdown"><a href="#"><span>What we do</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html">About</a> </li>
@@ -51,7 +52,8 @@
           <li><a href="contact.html">Get in touch</a></li>
           <li><a href="faq.html">FAQs</a> </li>
 
-          <li><a class="getstarted" href="about.html">MobiLearn</a></li>
+          <li><a class="mobiklearn" target="_blank" href="https://mobiklearn.com/"><span>Mobiklearn
+              </span></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -95,10 +97,9 @@
     <div class="hero-container" data-aos="fade-up">
       <h1>Basic healthcare for everyone, everywhere</h1>
       <h2>Revolutionizing Access to Health Care in low income areas</h2>
-      <a href='/img//Mobiklinic 2022 Annual Report.pdf.pdf' target="_blank" class="btn-get-started">View the
-        2022 Annual Report <i class="bi bi-cloud-arrow-down"></i></a>
-      <a href="http://elearning.mobiklinic.com" target="_blank" class="btn-get-started">Join MobiLearn <i
-          class="bi bi-arrow-right"></i></a>
+      <a href='/img//Mobiklinic 2022 Annual Report.pdf.pdf' target="_blank" class="getstarted--products"> <span>View the
+          2022 Annual Report</span></a>
+      <!-- <a href="mobiklearn.com" target="_blank" class="getstarted--products"><span>Join MobiLearn</span></a> -->
     </div>
   </section><!-- End Hero -->
   <main id="main">
@@ -176,35 +177,42 @@
 
         <div class="card-body mb-3">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
               <div class="shadow-sm p-3 mb-5 bg-white rounded">
                 <div class="card">
                   <img src="/img/Landing-page.png" class="card-img-top" alt="...">
                   <div class="card-body text-center">
                     <h5 class="card-title">MobiLearn</h5>
                     <p class="card-text">
-                      Learn and be equipped to respond to basic healthcare needs at
-                      your home, organization and community. You can become the a community
-                      health provider at your convenience. Get access to health training videos
+                      Learn & be equipped to respond to basic health needs at your home and community.
+                      You can become a first respondent community health worker after undertaking the courses
+                      offered on our platform. our chort courses are affiliated to Clarke International
+                      University - Health Studies Institution. Visit our platform
+
                     </p>
-                    <a href="elearning.mobiklinic.com" target="_blank" class="getstarted--products">Register</a>
+                    <a href="https://mobiklearn.com/" target="_blank"
+                      class="getstarted--products"><span>Register</span></a>
+                    <a class="downloadimage" href="google.com" target="_blank"><img width="150"
+                        src="./img/appstore.png"></a>
+                    <a class="downloadimage" href="google.com" target="_blank"><img width="150"
+                        src='./img/playstore.png'></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
               <div class="shadow-sm p-3 mb-5 bg-white rounded">
                 <div class="card">
                   <img src="/img/digital_tool.jpg" class="card-img-top" alt="...">
                   <div class="card-body text-center">
                     <h5 class="card-title">Digital tool </h5>
                     <p class="card-text">
-                      Register as a community health provider to become a community based
-                      healthcare provider, and utilize our digital tool that helps in
-                      real-time consultation with medical professions and referrals.
-                      After training you can
+                      Our digital tool for community health workers is a telemedicine tool that enables
+                      provider to provider interactions. It enables integrated referrals and ambulance
+                      responses. All ease last mile healthcare delivery.
                     </p>
-                    <a href="#" class="getstarted--products">Register</a>
+                    <a href="#" class="getstarted--products"><span>Register</span></a> <a class="downloadimage"
+                      href="google.com" target="_blank"><img width="150" src='./img/playstore.png'></a>
                   </div>
                 </div>
               </div>
@@ -215,6 +223,7 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
@@ -300,7 +309,7 @@
         <div class="text-center">
           <h3>Are you interested in our work?</h3>
           <p> We invite you to join us to form stronger partnerships and achieve a bigger vision together</p>
-          <a class="cta-btn" href="./contact.html">Get in touch</a>
+          <a class="getstarted--products" href="./contact.html"> <span>Get in touch</span></a>
         </div>
 
       </div>
@@ -375,7 +384,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>MobiKlinic Uganda 2022</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>MobiKlinic Uganda <script>document.write(new Date().getFullYear())</script></span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -401,6 +410,8 @@
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
+
+ 
 
 </body>
 

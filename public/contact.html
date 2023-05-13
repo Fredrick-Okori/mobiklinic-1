@@ -18,6 +18,9 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
+  <!-- Google recaptcha API -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- Vendor CSS Files -->
   <link href="/aos/aos.css" rel="stylesheet">
   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,37 +40,31 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-  
       <div class="logo">
         <h1 class="text-light"><a href="index.html"><img src="/img/mobiKlinic.png"></a></h1>
-  
       </div>
-  
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Who we are</a></li>
           <li class="dropdown"><a href="#"><span>What we do</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html">About</a> </li>
-              <li><a href='/img/Mobiklinic 2022 Annual Report.pdf.pdf' target="_blank">2022 Report</a></li>
+              <li><a href='img/Mobiklinic 2022 Annual Report.pdf.pdf' target="_blank">2022 Report</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="advisory.html">Advisory</a></li>
               <li><a href="governors.html">Non-Executives</a></li>
-  
             </ul>
           </li>
-          <li><a href="contact.html">Get in touch</a></li>
+          <li><a class="active" href="contact.html">Get in touch</a></li>
           <li><a href="faq.html">FAQs</a> </li>
-  
-          <li><a class="getstarted" href="about.html">MobiLearn</a></li>
+
+          <li><a class="mobiklearn" target="_blank" href="https://mobiklearn.com/"><span>Mobiklearn
+              </span></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-  
     </div>
   </header><!-- End Header -->
-
-
 
   <main id="main">
 
@@ -151,7 +148,12 @@
                   required></textarea>
               </div>
 
-              <div class="text-center" id="submit"><button type="submit">Send Message</button>
+              <div class="g-recaptcha" data-sitekey="6LcqOgQmAAAAAGcnAE1eJg5FY2aXJoOzEGDi54ts"></div>
+
+
+              <div class="text-center" id="submit">
+                <button type="submit" class="g-recaptcha" data-sitekey="6LcqOgQmAAAAAOevXwoIJZ7KbXLzSQJZm-SDOjju"
+                  data-callback='onSubmit' data-action='submit'>Send Message</button>
               </div>
             </form>
             <div class="my-3">
@@ -209,23 +211,26 @@
             </p>
 
             <div class="social-links">
-              <a href="https://mobile.twitter.com/klinicuganda" class="twitter" target="_blank" rel=”noopener”><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/mobiklinicUganda/" class="facebook" target="_blank" rel=”noopener”><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/mobiklinic/" class="instagram" target="_blank" rel=”noopener”><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/mobiklinic/about/" class="linkedin" target="_blank" rel=”noopener”><i
-                  class="bi bi-linkedin"></i></a>
+              <a href="https://mobile.twitter.com/klinicuganda" class="twitter" target="_blank" rel=”noopener”><i
+                  class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/mobiklinicUganda/" class="facebook" target="_blank" rel=”noopener”><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/mobiklinic/" class="instagram" target="_blank" rel=”noopener”><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/mobiklinic/about/" class="linkedin" target="_blank"
+                rel=”noopener”><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
 
-    <div class="col-lg-3 col-md-6 footer-newsletter">
-      <h4>Our reports</h4>
-      <p>
-        Find more in our yearly report.
-        <a href="./Events.html" target="_blank">Find here</a>
-      </p>
-    
-    </div>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our reports</h4>
+            <p>
+              Find more in our yearly report.
+              <a href="./Events.html" target="_blank">Find here</a>
+            </p>
+
+          </div>
 
         </div>
       </div>
@@ -260,6 +265,10 @@
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
+
+
+
+
 
 </body>
 

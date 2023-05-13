@@ -327,3 +327,4 @@ submit.addEventListener('click', function handleClick(event) {
 
   setTimeout(form.submit(), 1000);
 })
+

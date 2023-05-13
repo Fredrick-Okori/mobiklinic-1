@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #444444;
 }
 
@@ -18,10 +18,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #aacd6b;
-  text-decoration: none;
-}
+
 
 h1,
 h2,
@@ -29,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #main {
@@ -139,7 +136,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Orkney", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #fff;
@@ -212,6 +209,7 @@ h6 {
 }
 
 
+
 .navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
@@ -240,6 +238,8 @@ h6 {
     left: -100%;
   }
 }
+
+
 
 /**
 * Mobile Navigation 
@@ -298,6 +298,10 @@ h6 {
   transition: 0.3s;
 }
 
+a:hover {
+  color: #ffff;
+}
+
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
@@ -309,6 +313,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #DE0605;
+  border: 1px solid #fff;
 }
 
 .navbar-mobile .getstarted,
@@ -396,12 +401,11 @@ h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
   font-size: 24px;
 }
 
 #hero .btn-get-started {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -485,7 +489,7 @@ Counts section
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
@@ -495,7 +499,7 @@ Counts section
   margin-top: 20px;
   color: #7b7b7b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -554,7 +558,7 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
   padding-bottom: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #646c55;
 }
 
@@ -690,7 +694,7 @@ section {
 .about .count-box p {
   padding: 5px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #646c55;
@@ -702,7 +706,7 @@ section {
   margin-top: 20px;
   color: #646c55;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -859,7 +863,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -1001,7 +1005,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #3c4133;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .skills .content ul {
@@ -1036,7 +1040,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #3c4133;
 }
 
@@ -1123,7 +1127,7 @@ section {
 }
 
 .card-text {
-  /* text-align: justify; */
+  text-align: justify;
 }
 
 .features .card-text {
@@ -1427,15 +1431,68 @@ section {
 }
 
 .getstarted--products {
-  background: #DE0605;
-  border: 0;
-  border-radius: 4px 4px 4px 4px;
-  width: 35%;
-  padding: 7px;
+  border-radius: 50px;
+  background-color: #DE0605;
+  border: none;
+  color: #FFFFFF;
   text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer
+  font-size: 16px;
+  padding: 15px 30px 15px 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.getstarted--products span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.getstarted--products span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: #ffff;
+
+}
+
+.getstarted--products:hover span {
+  padding-right: 25px;
+  color: #ffff;
+
+}
+
+.getstarted--products:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #ffff;
+}
+
+.download--links {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.downloadimage {
+  transition: .3s;
+  padding: 10px
+}
+
+.downloadimage {
+  transform: scale(1, 1);
+
+}
+
+.download--title {
+  display: flex;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -1445,10 +1502,6 @@ section {
   padding-top: 60px;
 }
 
-a:hover {
-  color: #0C111C;
-  font-weight: bold;
-}
 
 .faq .faq-item {
   margin: 20px 0;
@@ -1470,7 +1523,7 @@ a:hover {
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 28px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .faq .faq-item p {
@@ -1912,9 +1965,7 @@ a:hover {
   border-radius: 4px;
 }
 
-.blog .entry .entry-content .read-more a:hover {
-  background: #9fc658;
-}
+
 
 .blog .entry .entry-content h3 {
   font-size: 22px;
@@ -1967,7 +2018,7 @@ a:hover {
   transition: 0.3s;
 }
 
-.blog .entry .entry-footer a:hover {
+.blog .entry .entry-footer {
   color: #DE0605;
 }
 
@@ -2368,7 +2419,7 @@ a:hover {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
@@ -2509,28 +2560,29 @@ a:hover {
   border-radius: 5px;
   text-align: center;
 }
- /* The alert message box */
- .alert {
-   padding: 20px;
-   background-color: #06abb1;
-   /* Red */
-   color: white;
-   margin-bottom: 15px;
- }
 
- /* The close button */
- .closebtn {
-   margin-left: 15px;
-   color: white;
-   font-weight: bold;
-   float: right;
-   font-size: 22px;
-   line-height: 20px;
-   cursor: pointer;
-   transition: 0.3s;
- }
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #06abb1;
+  /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
 
- /* When moving the mouse over the close button */
- .closebtn:hover {
-   color: black;
- }
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
