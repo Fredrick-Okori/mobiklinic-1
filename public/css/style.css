@@ -1082,7 +1082,7 @@ section {
   position: relative;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1120,6 +1120,7 @@ section {
 .features .card-title {
   font-weight: 700;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .features .card-title a {
@@ -2585,4 +2586,46 @@ section {
 /* When moving the mouse over the close button */
 .closebtn:hover {
   color: black;
+}
+
+#hero--service {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/service--bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+
+.blog-title,
+.blog-touch {
+  color: #ffff;
+
+}
+
+.card-title,
+.date--author {
+  text-align: left;
+}
+
+.blog--link {
+  color: #0C111C;
+}
+
+.block--link:hover {
+  color: #de0605;
+}
+.blog--main{
+
+}
+.card-img{
+  border-bottom: 10px solid #0C111C;
+  transform: scale(1,1);
+}
+
+.card-img:hover {
+  border-bottom: 10px solid #0C111C;
+  transform: scale(1, 1);
 }
