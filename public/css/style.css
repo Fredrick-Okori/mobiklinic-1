@@ -18,7 +18,31 @@ a {
   text-decoration: none;
 }
 
+.container---fluid {
 
+  display: flex;
+  place-content: center;
+  align-items: center;
+  margin-top: 0vh;
+  background-color: #0C111C;
+  color: #ffff;
+  padding: 10px;
+}
+
+.container-warmer {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  margin-top: 40vh;
+  font-size: 20px;
+
+}
+
+.align {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
 
 h1,
 h2,
@@ -2617,12 +2641,12 @@ section {
 .block--link:hover {
   color: #de0605;
 }
-.blog--main{
 
-}
-.card-img{
+.blog--main {}
+
+.card-img {
   border-bottom: 10px solid #0C111C;
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 .card-img:hover {

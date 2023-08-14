@@ -51,7 +51,9 @@ server.get('/blog', (req, res) => {
 server.get('/impact-blog', (req, res) => {
     res.render('impact.ejs')
 });
-
+server.get('*', (req, res) => {
+    res.render('unknown.ejs')
+});
 
 const contactAddress = 'mobiklinicuganda@gmail.com';
 
