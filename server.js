@@ -21,7 +21,6 @@ server.get('/', (req, res) => {
     res.render("index.ejs")
 })
 
-
 server.get('/about', (req, res) => {
     res.render("about.ejs")
 })
